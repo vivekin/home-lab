@@ -28,3 +28,12 @@ sudo apt install network-manager
 
 su -
 passwd -l root
+
+================
+
+ip addr
+hostname -I
+
+systemctl status ssh
+ssh captain@192.168.1.9
+
