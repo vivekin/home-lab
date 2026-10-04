@@ -1,0 +1,28 @@
+hostname:potato
+pcpotato
+captain,pilot
+
+
+root password
+su
+
+ip link
+cat /etc/network/interfaces
+
+.profile
+.bashrc
+export PATH=$PATH:/local/usr/sbin:/usr/sbin:/sbin
+
+for i in /sys/class/rfkill/rfkill*/soft; do echo 0 > "$i"; done
+ifdown wlp2s0
+ifup wlp2s0
+
+su
+apt install sudo
+usermod -aG sudo captain
+
+sudo apt update
+sudo apt install network-manager
+
+su -
+passwd -l root
