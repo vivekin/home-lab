@@ -44,6 +44,7 @@ assign static ip
 ================================
 To do:
 SSH Key Pair Authentication
+sudo systemctl enable ssh
 disable GRUB menu  /etc/default/grub
 power on bios
 
