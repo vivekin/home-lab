@@ -35,7 +35,7 @@ ip addr
 hostname -I
 
 systemctl status ssh
-ssh captain@192.168.1.9
+ssh captain@192.168.1.10
 
 c0:38:96:35:d1:f3
 assign static ip
