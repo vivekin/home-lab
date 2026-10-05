@@ -5,3 +5,34 @@
 C:\Users\Vivek.P>ssh captain@192.168.1.10
 ssh: connect to host 192.168.1.10 port 22: Connection timed out
 
+C:\Users\Vivek.P>ping 192.168.1.10
+
+Pinging 192.168.1.10 with 32 bytes of data:
+Reply from 192.168.1.7: Destination host unreachable.
+Reply from 192.168.1.7: Destination host unreachable.
+Reply from 192.168.1.7: Destination host unreachable.
+Reply from 192.168.1.7: Destination host unreachable.
+
+Ping statistics for 192.168.1.10:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+
+=========================
+
+ 192.168.1.10 
+
+ping -c 3 google.com
+
+ip addr
+wlp2s0 UP
+
+ip route
+ip neigh
+192.168.1.7 dev wlp2s0 lladdr fe:20:ff:b7:c5:eb STALE
+
+ping -c 3 192.168.1.7
+
+ip neigh
+192.168.1.7 dev wlp2s0 lladdr fe:20:ff:b7:c5:eb REACHABLE
+
+
+
