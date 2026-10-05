@@ -41,10 +41,13 @@ ssh captain@192.168.1.10
 c0:38:96:35:d1:f3
 assign static ip
 
+sudo iw dev wlp2s0 set power_save off
+
 ================================
 To do:
 SSH Key Pair Authentication
 sudo systemctl enable ssh
 disable GRUB menu  /etc/default/grub
 power on bios
+network manager wifi
 
