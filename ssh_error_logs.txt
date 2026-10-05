@@ -2,11 +2,10 @@
 
 
 03:40PM
-C:\Users\Vivek.P>ssh captain@192.168.1.10
+ssh captain@192.168.1.10
 ssh: connect to host 192.168.1.10 port 22: Connection timed out
 
-C:\Users\Vivek.P>ping 192.168.1.10
-
+ping 192.168.1.10
 Pinging 192.168.1.10 with 32 bytes of data:
 Reply from 192.168.1.7: Destination host unreachable.
 Reply from 192.168.1.7: Destination host unreachable.
