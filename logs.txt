@@ -16,10 +16,13 @@ Reply from 192.168.1.7: Destination host unreachable.
 Ping statistics for 192.168.1.10:
     Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
 
+arp -a
+
 =========================
 
- 192.168.1.10 
+192.168.1.10 
 
+iw dev wlp2s0 link
 ping -c 3 google.com
 
 ip addr
