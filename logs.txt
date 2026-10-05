@@ -34,5 +34,8 @@ ping -c 3 192.168.1.7
 ip neigh
 192.168.1.7 dev wlp2s0 lladdr fe:20:ff:b7:c5:eb REACHABLE
 
+iw dev wlp2s0 get power_save
+sudo iw dev wlp2s0 set power_save off
+
 
 
