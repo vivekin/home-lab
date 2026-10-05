@@ -1,0 +1,7 @@
+11:30AM on
+
+
+03:40PM
+C:\Users\Vivek.P>ssh captain@192.168.1.10
+ssh: connect to host 192.168.1.10 port 22: Connection timed out
+
