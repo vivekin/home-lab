@@ -1,0 +1,15 @@
+podman pull docker.io/pihole/pihole:2026.09.0
+
+refer https://docs.pi-hole.net/docker/
+sudo podman run -d --name pihole -p 53:53/tcp -p 53:53/udp -p 80:80/tcp -p 443:443/tcp -e TZ=Asia/Kolkata -e FTLCONF_webserver_api_password="314hole" -e FTLCONF_dns_listeningMode=all -v /home/captain/etc-pihole:/etc/pihole --cap-add NET_ADMIN --restart unless-stopped docker.io/pihole/pihole:2026.09.0
+
+http://192.168.1.10/admin/
+
+keralavision settings
+primary DNS 103.199.160.80
+secondary DNS 8.8.8.8
+
+
+
+
+
