@@ -9,6 +9,9 @@ keralavision settings
 primary DNS 103.199.160.80
 secondary DNS 8.8.8.8
 
+not WAN/Internet settings
+change this LAN/DHCP settings
+
 
 
 
