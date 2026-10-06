@@ -1,0 +1,52 @@
+
+
+
+systemctl is-active NetworkManager
+systemctl is-active networking
+
+
+nmcli connection show
+nmcli device status
+
+
+sudo cp /etc/network/interfaces /etc/network/interfaces.backup
+sudo cp /etc/NetworkManager/NetworkManager.conf /etc/NetworkManager/NetworkManager.conf.backup
+
+
+sudo nano /etc/NetworkManager/NetworkManager.conf
+[ifupdown]
+managed=true
+
+sudo nano /etc/network/interfaces
+comment wlp2s0 config
+
+sudo systemctl restart NetworkManager
+
+nmcli radio wifi
+nmcli device wifi list
+
+sudo systemctl stop networking
+sudo systemctl disable networking
+
+sudo systemctl status NetworkManager
+device wlp2s0 Couldn't initialize supplicant interface: GDBus.Error:fi.w1.wpa_supplicant1.UnknownError: wpa_supplicant couldn't grab this interface.
+
+
+sudo systemctl stop NetworkManager
+sudo systemctl stop wpa_supplicant
+sudo systemctl stop wpa_supplicant@wlp2s0
+ps aux | grep wpa_supplicant
+
+sudo ip link set wlp2s0 down
+sudo ip link set wlp2s0 up
+
+sudo systemctl start NetworkManager
+sudo nmcli device wifi connect "MEPPURATH" password ""
+
+nmcli connection show
+sudo nmcli connection modify "MEPPURATH" 802-11-wireless.powersave 2
+sudo nmcli connection down "MEPPURATH"
+sudo nmcli connection up "MEPPURATH"
+
+sudo ls -l /etc/NetworkManager/system-connections/
+
